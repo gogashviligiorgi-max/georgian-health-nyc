@@ -147,7 +147,35 @@
   <section class="contact" id="contact">
     <div class="container contact-inner">
       <h2>დაგვიკავშირდით</h2>
-      <p>მოგვწერეთ ან დაგვირეკეთ — პირველი საუბარი უფასოა.</p>
+      <p>შეავსეთ განაცხადი და ჩვენი გუნდი მალე დაგიკავშირდებათ — პირველი საუბარი უფასოა.</p>
+
+      <form id="lead-form" class="lead-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">სახელი</label>
+            <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+          </div>
+          <div class="form-field">
+            <label for="lastName">გვარი</label>
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">ტელეფონის ნომერი</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+          </div>
+          <div class="form-field">
+            <label for="email">იმეილი <span class="optional">(არასავალდებულო)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">განაცხადის გაგზავნა</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-divider">ან დაგვიკავშირდით პირდაპირ</div>
+
       <div class="contact-methods">
         <a class="btn btn-primary btn-lg" href="https://www.facebook.com/profile.php?id=61588705299958" target="_blank" rel="noopener">Messenger</a>
         <a class="btn btn-secondary btn-lg" href="tel:+1XXXXXXXXXX">📞 [TODO: ტელეფონის ნომერი]</a>
@@ -164,5 +192,6 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
